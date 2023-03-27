@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @package   F8_AttibutLock
+ * @author    Ntabethemba Ntshoza
+ * @copyright Copyright (c) 2023 F8
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="f8catalog" translate="label" sortOrder="160" showInDefault="1" showInWebsite="1" showInStore="1">
+            <tab>f8storeconfig</tab>
+            <label>Product Attributes</label>
+            <resource>F8_AttibutLock::config</resource>
+            <group id="f8_product_attributes" translate="label" type="text" sortOrder="160" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Product attributes List</label>
+                <field id="f8_product_attributes_list" translate="label" type="text" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Product attributes to be locked to read-only</label>
+                    <tooltip>Comma separated list of Product attributes</tooltip>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

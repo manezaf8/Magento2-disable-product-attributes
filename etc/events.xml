@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @package   F8_AttibutLock
+ * @author    Maneza F8
+ * @copyright Copyright (c) 2023 F8
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="catalog_product_edit_action">
+        <observer name="f8ecom_catalog_product_attributes_lock"
+                  instance="F8\AttibutLock\Observer\CatalogProductAttributeLockObserver"/>
+    </event>
+</config>
